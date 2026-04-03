@@ -39,7 +39,8 @@ Biomedical Signal Processing | Time-Series Modeling | Computer Vision | NLP | Cl
 - Architected CNN-BiLSTM architecture with temporal attention mechanisms for time-series signal analysis
 - Implemented end-to-end signal processing pipeline: 3-channel CWT scalograms (PPG, VPG, APG) from MIMIC-III dataset
 - Trained on ~40K segments from 31 subjects with subject-independent validation (clinical-grade evaluation)
-- currently trying better hybrid architectures that can reduce loss and make it clinical grade 
+- currently trying better hybrid architectures that can reduce loss and make it clinical grade
+
 **Why It Matters:** Demonstrates mastery of medical-grade ML—biomedical signal processing, advanced deep architectures, industry-standard datasets, and realistic clinical evaluation metrics. Shows research rigor and attention to detail in a high-impact healthcare domain.
 
 **Tech Stack:** TensorFlow | CNN-BiLSTM | CWT Signal Processing | MIMIC-III Dataset | Attention Mechanisms
