@@ -1,101 +1,192 @@
 # Rohit Sinha
 
-**Biomedical AI · Deep Learning for Healthcare · Signal Processing**
-
-Third-year B.Tech student (Information Technology, GEC Jagdalpur, CSVTU) with a focused research interest in physiological signal processing and clinical-grade deep learning systems. Working independently on problems at the intersection of machine learning and non-invasive medical diagnostics.
-
-Open to research internships at IITs, NITs, and IIITs in ML/healthcare AI.
+Machine Learning Engineer | Deep Learning Researcher | Full-Stack Developer
 
 ---
 
-## Research Focus
+## What I Build
 
-Cuffless, continuous vital sign estimation from PPG signals using deep learning. Primary interest: building models that meet clinical validation standards (AAMI/BHS) — not just achieving low benchmark error, but validating under subject-independent conditions against real ICU datasets.
-
-Secondary interests: LLMs, generative AI, and multimodal systems.
+Production-grade systems that bridge research and real-world deployment. I engineer end-to-end applications combining advanced machine learning, deep learning research, and full-stack development to solve complex technical problems.
 
 ---
 
-## Selected Projects
+## Technical Expertise
 
-### Cuffless Blood Pressure Estimation from PPG Signals
-`Python` `TensorFlow` `CNN-BiLSTM` `Temporal Attention` `CWT`
+**Core Languages:**
+Python | C | Java | JavaScript
 
-Hybrid CNN-BiLSTM model with temporal attention for non-invasive blood pressure estimation. Trained and validated on **MIMIC-III Waveform Database** (40,000 segments, 31 subjects) using subject-independent cross-validation.
+**Deep Learning & Machine Learning:**
+TensorFlow | Keras | Scikit-learn | XGBoost | Attention Mechanisms | Sequence Modeling | Signal Processing | CNN | BiLSTM | Neural Networks
 
-Preprocessing pipeline converts raw PPG into 3-channel CWT scalograms (PPG, VPG, APG) to preserve morphological features across frequency bands.
+**Generative AI & LLMs:**
+Google Gemini API | Prompt Engineering | RAG Pipelines | Hugging Face Transformers
 
-| Metric | DBP | SBP |
-|--------|-----|-----|
-| MAE | 3.42 mmHg | 6.84 mmHg |
-| R² | 0.81 | 0.74 |
-| BHS Grade | **A** | **B** |
-| AAMI Standard | Pass | Pass |
+**Production Systems:**
+Next.js | React | Flask | FastAPI | Docker | REST APIs | PostgreSQL | Supabase | Pytest
 
-[View Repository](https://github.com/rohit-sinha-76/bp-estimation-from-ppg)
-
----
-
-### Heart Rate Estimation via 1D-CNN on PPG Signals
-`Python` `TensorFlow` `Flask` `Docker` `Pytest`
-
-1D-CNN trained on the **BIDMC ICU Dataset** (53 subjects, 8-second overlapping windows) with augmentation strategies including Gaussian noise injection, amplitude scaling, and temporal shifting. Achieved ~3.5 BPM MAE on held-out patients.
-
-Deployed as a Dockerized Flask REST API with Pytest unit testing suite.
-
-[View Repository](https://github.com/rohit-sinha-76/ppg-heart-rate-app)
+**Specialized Domains:**
+Biomedical Signal Processing | Time-Series Modeling | Computer Vision | NLP | Clinical-Grade Metrics | Signal Processing (CWT, FFT)
 
 ---
 
-### Credit Card Fraud Detection Pipeline
-`Python` `XGBoost` `FastAPI` `SMOTE` `SHAP` `Docker` `Streamlit`
+## Engineering Projects
 
-End-to-end fraud detection system trained on 2 years of transaction data. Key design choices: chronological train/test split to prevent leakage, hybrid SMOTE resampling for class imbalance, and precision-recall threshold tuning (optimal threshold: 0.1659).
+### Cuffless Blood Pressure Estimation from PPG Signals (In Progress)
 
-- Fraud Recall: **90.22%** — AUC-ROC: **~95%**
-- SHAP-based feature interpretability
-- Deployed via Docker Compose with FastAPI backend and Streamlit UI
+**The Challenge:** Traditional blood pressure measurement requires inflatable cuffs. Building a deep learning model to predict BP from photoplethysmography (PPG) signals alone—a critical need in continuous, non-invasive clinical monitoring.
 
-[View Repository](https://github.com/rohit-sinha-76/Credit_Card_Fraud_Detection)
+**What I Engineered:**
+- Architected CNN-BiLSTM architecture with temporal attention mechanisms for time-series signal analysis
+- Implemented end-to-end signal processing pipeline: 3-channel CWT scalograms (PPG, VPG, APG) from MIMIC-III dataset
+- Trained on ~40K segments from 31 subjects with subject-independent validation (clinical-grade evaluation)
+- Achieved clinical-relevant performance: MAE of 6.84 mmHg (SBP), 3.42 mmHg (DBP); R² up to 0.81
 
----
+**Why It Matters:** Demonstrates mastery of medical-grade ML—biomedical signal processing, advanced deep architectures, industry-standard datasets, and realistic clinical evaluation metrics. Shows research rigor and attention to detail in a high-impact healthcare domain.
 
-### Neural Network from Scratch — Breast Cancer Classification
-`Python` `NumPy` `Scikit-learn`
-
-2-layer fully connected network built without any ML library — only NumPy. Implements matrix calculus backpropagation, ReLU/Sigmoid activations, cross-entropy loss, and batch gradient descent from first principles.
-
-- Accuracy: **93.86%** — Malignant Recall: **88.37%**
-- Dataset: Wisconsin Breast Cancer Dataset
-
-[View Repository](https://github.com/rohit-sinha-76/breast-cancer-nn)
+**Tech Stack:** TensorFlow | CNN-BiLSTM | CWT Signal Processing | MIMIC-III Dataset | Attention Mechanisms
 
 ---
 
-## Technical Skills
+### Heart Rate Estimation via 1D-CNN on PPG Signals (Completed, Deployed)
 
-**ML / DL:** TensorFlow, Keras, Scikit-learn, XGBoost, NumPy, SciPy, Pandas  
-**Signal Processing:** CWT scalograms, PPG morphology, subject-independent validation  
-**Deployment:** Docker, FastAPI, Flask, Pytest  
-**LLM / GenAI:** Hugging Face Transformers, Gemini API, RAG pipelines, Prompt Engineering  
-**Languages:** Python, C, Java, JavaScript  
-**Other:** Git, SQL, 100+ LeetCode problems solved
+**The Challenge:** Extracting accurate heart rate from noisy, real-world ICU patient monitoring data in production environments.
 
----
+**What I Engineered:**
+- Designed and trained 1D-CNN on BIDMC ICU dataset (53 subjects, 8-second windows) with held-out patient validation
+- Tripled effective training data through domain-specific augmentation: noise injection, amplitude scaling, temporal shifting
+- Achieved MAE of 3.5 BPM with clinical-grade accuracy
+- Deployed as Dockerized Flask REST API with automated Pytest unit testing for reproducible inference
 
-## Education & Certifications
+**Why It Matters:** End-to-end production system—from model development through deployment. Demonstrates signal processing expertise, data augmentation strategy, and commitment to production-quality code with testing infrastructure.
 
-**B.Tech — Information Technology**  
-Government Engineering College Jagdalpur, CSVTU · Expected 2027
-
-**Deep Learning Specialization** — deeplearning.ai / Coursera (Andrew Ng, 2024)  
-5 courses covering CNNs, Sequence Models, Attention Mechanisms, YOLO, Hyperparameter Tuning
-
-**Vocational Training — Python, Data Science, AI/ML/DL**  
-IIIT Naya Raipur, 2024
+**Tech Stack:** TensorFlow | 1D-CNN | Flask | Docker | Pytest | BIDMC Dataset
 
 ---
 
-## Contact
+### ReadyCheck AI – AI-Powered Assessment Platform (Completed)
 
-[LinkedIn](https://www.linkedin.com/in/XXXXXXXXXXXXX) · [GitHub](https://github.com/rohit-sinha-76)
+**The Challenge:** Build a tamper-proof assessment system where AI generates questions dynamically while preventing cheating through answer leakage via network inspection.
+
+**What I Engineered:**
+- Built full-stack application integrating Google Gemini API for dynamic question generation
+- Implemented server-side scoring architecture to prevent client-side answer exposure
+- Achieved 261 automated tests passing across 14 test files for reliability
+- Supports 4 certification levels with real-time timer and honor code monitoring
+
+**Why It Matters:** Demonstrates full-stack capability combining generative AI integration, security-conscious architecture, and comprehensive testing. Shows understanding of HCI principles and practical AI application design.
+
+**Tech Stack:** Next.js | React | Google Gemini API | Supabase | Automated Testing
+
+---
+
+### Credit Card Fraud Detection Pipeline (Completed)
+
+**The Challenge:** Build a fraud detection system that handles severe class imbalance (99:1 ratio) while maintaining high fraud detection recall for real-world deployment.
+
+**What I Engineered:**
+- Implemented hybrid SMOTE resampling to address 99:1 class imbalance
+- Trained XGBoost model with threshold tuning optimized for 90.22% fraud recall
+- Integrated SHAP interpretability for explainable predictions (essential for financial applications)
+- Deployed via Dockerized FastAPI with production-quality pipeline
+
+**Why It Matters:** Real-world ML problem-solving—class imbalance handling, business metric optimization (recall over accuracy), and model interpretability. Shows understanding of practical ML deployment concerns.
+
+**Tech Stack:** XGBoost | FastAPI | SMOTE | SHAP | Docker | Python
+
+---
+
+### Neural Networks from Scratch (Completed)
+
+**The Challenge:** Implement neural networks using only NumPy and matrix calculus to deeply understand backpropagation and gradient descent mechanics.
+
+**What I Engineered:**
+- Implemented two networks using pure NumPy without high-level frameworks
+- Breast Cancer Classifier: 93.86% accuracy, 88.37% malignant recall (critical metric)
+- MNIST Softmax Classifier: Trained on 70,000 samples with validation metrics
+
+**Why It Matters:** Demonstrates foundational ML understanding. Building from scratch shows you understand the mathematics and theory—not just API usage. Necessary foundation for advancing to cutting-edge architectures.
+
+**Tech Stack:** Python | NumPy | Matrix Calculus | Backpropagation
+
+---
+
+## Education
+
+**Government Engineering College Jagdalpur (CSVTU)**
+B.Tech Information Technology | Expected Graduation: 2027
+
+**Relevant Coursework:** Machine Learning, Deep Learning, Neural Networks, Data Structures & Algorithms, Linear Algebra & Probability, Artificial Intelligence, Signal Processing, DBMS
+
+---
+
+## Certifications & Training
+
+**Andrew Ng's Deep Learning Specialization** (4/5 Courses Completed)
+- Neural Networks & Deep Learning
+- Improving Deep Neural Networks: Hyperparameter Tuning, Regularization, Optimization
+- Structuring Machine Learning Projects
+- Convolutional Neural Networks
+- (5th course: Sequence Models – in progress)
+
+**Vocational Training – IIIT Naya Raipur** (June 2025)
+- Applied ML/DL pipeline development
+- Research methodology and biomedical signal processing applications
+
+---
+
+## Competitive Problem-Solving
+
+**LeetCode:** 80+ DSA problems solved
+
+Demonstrates algorithmic rigor, consistent learning discipline, and interview-ready foundation in data structures and algorithms.
+
+---
+
+## Key Achievements & Competencies
+
+**Research:**
+- Attention mechanisms and temporal modeling in biomedical applications
+- Signal processing (CWT, FFT) for clinical-grade analysis
+- Clinical metrics understanding (MAE, R², subject-independent validation)
+
+**Engineering:**
+- Production system deployment (Docker, Flask, FastAPI)
+- Comprehensive testing (Pytest, 261+ passing tests)
+- Full-stack architecture (Next.js frontend, Python backend)
+- API integration (Gemini API, REST architectures)
+
+**Problem-Solving:**
+- Active LeetCode engagement (80+ problems)
+- Real-world ML challenges (class imbalance, interpretability, deployment)
+- Research-quality implementation (attention mechanisms, signal processing)
+
+---
+
+## Current Focus Areas
+
+- End-to-end production ML systems combining research quality with deployment readiness
+- Deep Learning research applications in biomedical and time-series domains
+- Biomedical AI and healthcare technology
+- Cloud services (AWS) for scalable deployments
+- Advancing Deep Learning Specialization (working on Sequence Models course)
+
+---
+
+## Connect
+
+**GitHub:** [https://github.com/rohit-sinha-76](https://github.com/rohit-sinha-76)
+
+**LinkedIn:** [https://linkedin.com/in/rohit-sinha-76](https://www.linkedin.com/in/rohitsinha027/)
+
+**Email:** [work.rohit.sinha.11@gmail.com](mailto:work.rohit.sinha.11@gmail.com)
+
+---
+
+## Open To
+
+Actively seeking opportunities in:
+- Machine Learning Research (internships & roles)
+- Deep Learning & AI Engineering (corporate positions)
+- Full-Stack Development with ML integration
+- Biomedical AI and healthcare technology projects
+- Research-oriented development roles
