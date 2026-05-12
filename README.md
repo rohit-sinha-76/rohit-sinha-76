@@ -14,7 +14,7 @@ Building production ML systems & scalable backends. 5/5 Deep Learning courses co
 
 **Languages:** Python | TypeScript | Java | C  
 **ML/AI:** TensorFlow | XGBoost | Scikit-learn | Gemini API | Prompt Engineering  
-**Backend:** Node.js | FastAPI | Express.js | PostgreSQL | MongoDB  
+**Backend:** Flask | FastAPI | Node.js | Express.js | PostgreSQL | MongoDB  
 **Frontend:** React.js | Next.js  
 **DevOps:** Docker | GitHub Actions | Git | Pytest | Vitest  
 
@@ -22,7 +22,7 @@ Building production ML systems & scalable backends. 5/5 Deep Learning courses co
 
 ## Work Experience
 
-**Applied ML/DL Research Intern** — IIIT Naya Raipur (June – July 2025)
+** ML/DL Vocational Trainee ** — IIIT Naya Raipur (June – July 2025)
 - Built supervised ML system on MIMIC-III (48K samples, 31 subjects) for cuffless BP prediction
 - **Achieved MAE 6.84/3.42 mmHg** — approaching clinical benchmarks via subject-independent validation
 - Optimized preprocessing pipeline with vectorized ops: **40% runtime reduction**
